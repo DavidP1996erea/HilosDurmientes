@@ -1,5 +1,13 @@
 public class Main extends Thread {
 
+// Se extiende la clase Thread
+
+
+
+
+    /* En el método run, que ejecutará cada uno de los hilos. Se crea un while donde se mostrará un sout que
+       mostrará el nombre del hilo y se pausará un determinando de tiempo aleatorio.
+    */
 
     @Override
     public void run() {
@@ -22,13 +30,14 @@ public class Main extends Thread {
 
     public static void main(String[] args) {
 
-
+// Se crean objetos de la clase Main que llamarán a los hilos
         Main hilo1 = new Main();
         Main hilo2 = new Main();
         Main hilo3 = new Main();
         Main hilo4 = new Main();
         Main hilo5 = new Main();
 
+        // Se pone un nombre a cada hilo
         hilo1.setName("hilo1");
         hilo2.setName("hilo2");
         hilo3.setName("hilo3");
@@ -36,6 +45,7 @@ public class Main extends Thread {
         hilo5.setName("hilo5");
 
 
+        // Se inician los hilos
 
         hilo1.start();
         hilo2.start();
